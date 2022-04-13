@@ -31,7 +31,23 @@ body {
           border-style: none; }
 
           button {
-            border-radius: 0; }
+            display:inline-block;
+            color:rgb(22, 0, 121);
+            text-decoration: none;
+            padding:10px 30px;
+            border: 3px solid #3c67e3;
+            border-radius: 5px;
+           }
+
+           @keyframes pulsate {
+            0%{
+              box-shadow: 0 0 15px #5ddcff,
+                          0 0 30px #1d00c2;
+            }
+          }
+          button:hover{
+             animation: pulsate 1s ease-in-out;
+                      }
 
             button:focus {
               outline: 1px dotted;
